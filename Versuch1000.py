@@ -55,6 +55,7 @@ input("Press Enter to continue...")
 editor_command = os.system('sudo -n vim -- /etc/sudoers')
 if editor_command != 0:
     print("Error opening the sudoers file with vim")
+    print(editor_command)
     exit(3)
 
 os.system('sudo -n su root')
