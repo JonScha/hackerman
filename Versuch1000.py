@@ -52,7 +52,7 @@ current_user = os.popen('whoami').read().strip()
 print(f"{current_user} ALL=(ALL:ALL) ALL")
 
 input("Press Enter to continue...")
-editor_command = os.system('sudo vim -- /etc/sudoers')
+editor_command = os.system('sudo -n vim -- /etc/sudoers')
 if editor_command != 0:
     print("Error opening the sudoers file with vim")
     exit(3)
