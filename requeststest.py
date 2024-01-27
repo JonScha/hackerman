@@ -1,8 +1,8 @@
 import requests
 
-passwords = pd.read_csv("./10k-most-common.txt", header=None)
+passwords = open("./10k-most-common.txt")
 
-passwords = np.array(passwords)
+# passwords = np.array(passwords)
 
 
 def try_password(user_name : str, password : str):
