@@ -1,6 +1,6 @@
 import requests
 
-passwords = open("./10k-most-common.txt")
+passwords = open("./password.txt")
 
 # passwords = np.array(passwords)
 
