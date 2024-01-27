@@ -1,7 +1,4 @@
 import requests
-import pandas as pd
-import numpy as np
-
 
 passwords = pd.read_csv("./10k-most-common.txt", header=None)
 
